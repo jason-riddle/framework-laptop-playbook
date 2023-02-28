@@ -1,5 +1,5 @@
 apply:
-	devenv shell -- ansible-playbook --vault-password-file ~/.ansible_vault_password.txt main.yml
+	devenv shell -- ansible-playbook --vault-password-file ~/.ansible_vault_password.txt --ask-become-pass main.yml
 
 deps:
 	devenv shell -- ansible-galaxy install --role-file=requirements.yml
