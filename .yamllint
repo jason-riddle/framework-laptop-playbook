@@ -1,0 +1,14 @@
+---
+extends: default
+
+rules:
+  line-length:
+    max: 180
+    level: warning
+  truthy:
+    ignore: |
+      .github
+
+ignore: |
+  .github
+  main.yml
