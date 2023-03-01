@@ -4,9 +4,9 @@
 #
 #    pip-compile --output-file=requirements-py/requirements-py-dev.txt --resolver=backtracking requirements-py/requirements-py-dev.in
 #
-ansible==7.2.0
+ansible==7.3.0
     # via -r requirements-py/requirements-py-dev.in
-ansible-core==2.14.2
+ansible-core==2.14.3
     # via ansible
 argcomplete==2.0.0
     # via pipx
