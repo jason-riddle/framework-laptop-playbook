@@ -5,7 +5,7 @@ deps:
 	devenv shell -- ansible-galaxy install --role-file=requirements.yml
 
 deps-py-gen:
-	devenv shell -- pipx run --spec pip-tools pip-compile --verbose --resolver=backtracking --output-file=requirements-py/requirements-py-dev.txt requirements-py/requirements-py-dev.in
+	devenv shell -- pipx run --spec pip-tools pip-compile --verbose --upgrade --resolver=backtracking --output-file=requirements-py/requirements-py-dev.txt requirements-py/requirements-py-dev.in
 
 venv:
 	devenv shell -- python3 -m venv .venv
