@@ -49,7 +49,6 @@
     backup_remote_connection: "backups-pc"
     backup_remote_base_path: "backups-pc-root@Jasons-Framework-Laptop"
     backup_remote_connection_ssh_options: "-F /root/.ssh/config"
-    # TODO: Failed to write to file /etc/ssh/ssh_known_hosts: [Errno 13] Permission denied
     backup_remote_host_name: 'fm1395.rsync.net'
     # Run: ssh-keyscan -t ed25519 fm1395.rsync.net
     backup_remote_host_key: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINdUkGe6kKn5ssz4WRZKjcws0InbQqZayenzk9obmP1'
