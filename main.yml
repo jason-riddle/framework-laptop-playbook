@@ -59,17 +59,6 @@
         src: templates/ssh-config.j2
         dest: /root/.ssh/config
 
-    - name: Install the ssh public key file.
-      copy:
-        src: files/id_ed25519.pub
-        dest: /root/.ssh/id_ed25519.pub
-
-    # - name: Install the ssh private key file.
-    #   copy:
-    #     src: files/id_ed25519
-    #     dest: /root/.ssh/id_ed25519
-    #     mode: '0600'
-
   roles:
     - geerlingguy.backup
 
