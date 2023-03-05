@@ -16,5 +16,8 @@ create:
 edit:
 	devenv shell -- ansible-vault edit files/id_ed25519
 
-scp:
-	scp files/id_ed25519.pub backups-pc:.ssh/authorized_keys
+copy-keys:
+	scp /root/.ssh/id_ed25519.pub root-fm1395-rsync-net:.ssh/authorized_keys
+
+backup:
+	sudo /root/backups/backup.sh
