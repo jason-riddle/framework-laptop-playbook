@@ -4,7 +4,9 @@
 
   vars:
     backup_cron_job_state: "absent"
-    backup_hour: "3"
+    # Backup every 2 hours
+    # REF: https://cron.help/every-2-hours
+    backup_hour: "*/2"
     backup_minute: "00"
     backup_user: "root"
     backup_path: "/root/backups"
