@@ -3,7 +3,7 @@
   become: true
 
   vars:
-    backup_cron_job_state: "absent"
+    backup_cron_job_state: "present"
     # Backup every 2 hours
     # REF: https://cron.help/every-2-hours
     backup_hour: "*/2"
