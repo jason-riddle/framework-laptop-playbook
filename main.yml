@@ -46,9 +46,9 @@
       - "/var/log"
       - "/var/tmp"
     backup_identifier: ""
-    backup_remote_connection: "backups-pc"
+    backup_remote_connection: "root-fm1395-rsync-net"
     backup_remote_base_path: "backups-pc-root@Jasons-Framework-Laptop"
-    backup_remote_connection_ssh_options: "-F /root/.ssh/config"
+    backup_remote_connection_ssh_options: "-F /root/.ssh/config -v"
     backup_remote_host_name: 'fm1395.rsync.net'
     # Run: ssh-keyscan -t ed25519 fm1395.rsync.net
     backup_remote_host_key: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINdUkGe6kKn5ssz4WRZKjcws0InbQqZayenzk9obmP1'
